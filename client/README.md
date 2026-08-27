@@ -1,0 +1,1 @@
+So this project is a fun little website I built for my best friend's birthday. Her name is Subechha but she likes to be called Subbu.

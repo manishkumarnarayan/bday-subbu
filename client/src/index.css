@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-outfit: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-jakarta: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-handwriting: 'Caveat', cursive;
+    --font-fredoka: 'Fredoka', cursive, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-jakarta);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom Typography Helper Classes */
+.font-handwriting {
+  font-family: var(--font-handwriting);
+}
+
+.font-outfit {
+  font-family: var(--font-outfit);
+}
+
+.font-fredoka {
+  font-family: var(--font-fredoka);
+}
+
+/* Neumorphism Shadows for Warm Pastel Theme */
+.neu-flat {
+  background: #fdf8f5;
+  box-shadow: 8px 8px 20px rgba(220, 185, 175, 0.35),
+             -8px -8px 20px rgba(255, 255, 255, 0.95);
+}
+
+.neu-card {
+  background: #fffcf9;
+  box-shadow: 10px 10px 24px rgba(215, 175, 165, 0.28),
+             -10px -10px 24px rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.neu-btn {
+  background: linear-gradient(145deg, #ffffff, #f7eee9);
+  box-shadow: 5px 5px 14px rgba(215, 175, 165, 0.32),
+             -5px -5px 14px rgba(255, 255, 255, 0.95);
+  transition: all 0.2s ease;
+}
+
+.neu-btn:hover {
+  box-shadow: 7px 7px 18px rgba(215, 175, 165, 0.4),
+             -7px -7px 18px rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+}
+
+.neu-btn:active {
+  box-shadow: inset 4px 4px 8px rgba(215, 175, 165, 0.35),
+             inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  transform: translateY(1px);
+}
+
+.neu-inset {
+  background: #f8f1eb;
+  box-shadow: inset 5px 5px 10px rgba(215, 175, 165, 0.3),
+             inset -5px -5px 10px rgba(255, 255, 255, 0.9);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 12px 40px rgba(244, 180, 160, 0.15);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 16px rgba(240, 160, 150, 0.12);
+}
+
+.glass-dark {
+  background: rgba(26, 26, 36, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark Mode Neumorphism for Intro */
+.neu-dark-btn {
+  background: linear-gradient(145deg, #1c1c28, #13131c);
+  box-shadow: 6px 6px 16px #09090e,
+             -6px -6px 16px #272738;
+}
+
+.neu-dark-btn:hover {
+  box-shadow: 8px 8px 20px #07070b,
+             -8px -8px 20px #2f2f45;
+}
+
+.neu-dark-btn:active {
+  box-shadow: inset 4px 4px 10px #09090e,
+             inset -4px -4px 10px #272738;
+}
+
+/* Polaroid Photo Card styling */
+.polaroid {
+  background: #ffffff;
+  padding: 12px 12px 36px 12px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid:hover {
+  transform: scale(1.04) rotate(0deg) !important;
+  box-shadow: 0 20px 40px rgba(244, 114, 182, 0.25);
+  z-index: 30;
+}
+
+/* Animated gradient text */
+.gradient-text-warm {
+  background: linear-gradient(135deg, #ff5e62 0%, #ff9966 50%, #f64f59 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-cute {
+  background: linear-gradient(135deg, #f43f5e 0%, #ec4899 40%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Candle Flame Flicker */
+@keyframes flicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 10px rgba(255, 170, 0, 0.9));
+  }
+  25% {
+    transform: scale(1.08, 0.92) rotate(2deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 16px rgba(255, 200, 50, 1));
+  }
+  50% {
+    transform: scale(0.95, 1.05) rotate(-2deg);
+    opacity: 0.85;
+    filter: drop-shadow(0 0 8px rgba(255, 150, 0, 0.8));
+  }
+  75% {
+    transform: scale(1.04, 0.98) rotate(1deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 14px rgba(255, 190, 30, 0.95));
+  }
+}
+
+.candle-flame {
+  animation: flicker 1.4s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+
+/* Floating animation */
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 4s ease-in-out infinite;
+}
+
+/* Hide scrollbar on sleek panels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
