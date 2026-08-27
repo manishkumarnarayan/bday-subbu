@@ -24,7 +24,7 @@ export const DarkIntro = ({ onComplete }) => {
     {
       subtitle: "ENERGY READINGS: 100% UNHINGED",
       title: "Caution: High Levels of Chaos Ahead",
-      desc: "Prepare for 3 trials of pure fun, epic photo reveals, and a grand surprise waiting at the end!",
+      desc: null,
       badge: "🎉 Birthday Special Edition"
     }
   ];

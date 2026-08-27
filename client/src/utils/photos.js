@@ -22,7 +22,7 @@ export const SUBBU_PHOTOS = [
     subtitle: 'Moustache on point, fierce pout unlocked',
     funnyQuote: '"It\'s-a-me, Subbu! Saving the day since 2007."',
     alt: 'Mario Subbu with mustache and cap',
-    vibe: 'Heroic & Sassy',
+    vibe: 'Certified Charsi',
     color: 'from-rose-500 to-orange-400',
     rotation: '2deg'
   },
@@ -40,7 +40,7 @@ export const SUBBU_PHOTOS = [
   {
     id: 'goddess',
     src: imgSunGoddess,
-    title: 'Sun God / Aesthetic Queen',
+    title: 'Aesthetic Queen',
     subtitle: 'Artistic face paint, golden eyeliner, 100% main character',
     funnyQuote: '"Taking 300 selfies just to pick the most iconic one."',
     alt: 'Subbu artistic face paint selfie',

@@ -304,7 +304,7 @@ export const StageCakeCandles = ({ onNextStage, onUnlockBadge, isBadgeUnlocked }
             }}
             className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-rose-500 via-pink-500 to-amber-500 text-white font-bold text-base sm:text-lg shadow-xl shadow-rose-500/40 flex items-center justify-center gap-2 cursor-pointer font-fredoka hover:opacity-95 transition-all"
           >
-            <span>Open The Grand Finale & Final Message 💌</span>
+            <span>Open The Grand Finale</span>
             <ArrowRight className="w-5 h-5" />
           </button>
         </motion.div>

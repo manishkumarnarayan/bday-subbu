@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, Crown, CheckCircle, XCircle, ArrowRight, Award, HelpCircle, Heart } from 'lucide-react';
 import { soundManager } from '../../utils/sound';
 import { triggerConfetti } from '../../utils/confetti';
-import { imgJoker, imgSunGoddess, imgBaby } from '../../utils/photos';
+import { imgJoker, imgSunGoddess, imgBaby, imgMario } from '../../utils/photos';
 
 export const StageVibeQuiz = ({ onNextStage, onUnlockBadge, isBadgeUnlocked }) => {
   const [currentQIndex, setCurrentQIndex] = useState(0);
@@ -28,14 +28,14 @@ export const StageVibeQuiz = ({ onNextStage, onUnlockBadge, isBadgeUnlocked }) =
     },
     {
       id: 2,
-      image: null,
+      image: imgMario,
       question: "Subbu ka favourite nasha kya hai?",
       options: [
         { text: "Ganja", isCorrect: false },
         { text: "Bhang", isCorrect: false },
         { text: "whisky", isCorrect: false },
       ],
-      explanation: "It's galat ladko se attach hona 😔"
+      explanation: "It's 'galat ladko se attach hona' 😔"
     },
     {
       id: 3,
@@ -44,8 +44,8 @@ export const StageVibeQuiz = ({ onNextStage, onUnlockBadge, isBadgeUnlocked }) =
       imageCaption: "Exhibit B: Certified Nasedi Mode",
       question: "Which thought does runs in subbu's brain at 3AM?",
       options: [
-        { text: "Raatiya ke 3 baje make-up ke sath bakchodi krna ", isCorrect: true },
         { text: "Planning an early 5:00 AM jog and healthy salad breakfast", isCorrect: false },
+        { text: "Raatiya ke 3 baje make-up ke sath bakchodi krna ", isCorrect: true },
         { text: "Wondering why anyone would ever take life too seriously", isCorrect: false },
       ],
       explanation: "Bakchodi rukni nhi chahiye 🃏✨"

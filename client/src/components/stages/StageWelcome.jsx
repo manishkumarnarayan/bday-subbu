@@ -147,7 +147,7 @@ export const StageWelcome = ({ onNextStage, unlockedBadges, onSelectStage }) => 
             className="neu-btn px-6 py-4 rounded-2xl text-slate-700 font-semibold text-sm sm:text-base flex items-center justify-center gap-2 cursor-pointer"
           >
             <Heart className="w-4 h-4 text-rose-500 fill-rose-500 animate-pulse" />
-            <span>Send Love & Confetti</span>
+            {/* <span>Send Love & Confetti</span> */}
           </button>
         </div>
       </motion.div>
@@ -159,9 +159,6 @@ export const StageWelcome = ({ onNextStage, unlockedBadges, onSelectStage }) => 
             <h2 className="text-xl sm:text-2xl font-bold text-slate-800 font-fredoka">
               The 4 Legendary Personas 📸
             </h2>
-            <p className="text-xs sm:text-sm text-slate-500">
-              Starring in our birthday challenges & unlocked polaroid vault
-            </p>
           </div>
         </div>
 
