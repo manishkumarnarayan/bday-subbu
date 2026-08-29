@@ -83,7 +83,7 @@ export const StageGrandFinale = ({ onRestartExperience }) => {
         {/* Subtitle Dedication */}
         <p className="text-slate-700 text-base sm:text-xl font-medium max-w-xl mx-auto leading-relaxed mb-6">
           To our one and only <strong className="text-rose-600 font-bold">Subbu</strong> —
-          the cutie turned nasedi baddie <br /> <strong className="text-amber-600">30.08.2007</strong>! ✨
+          the nasedi baddie <br /> <strong className="text-amber-600">30.08.2007</strong>! ✨
         </p>
 
         {/* Quick Celebration Burst Buttons */}
